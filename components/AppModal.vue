@@ -1,8 +1,8 @@
 
 <template>
   <transition name="modal-fade">
-    <div class="modal-backdrop">
-    <div class="modal-innner">
+    <div class="modal-backdrop" @click="$emit('close')">
+    <div class="modal-innner" @click.stop>
       <div class="modal"
         role="dialog"
         aria-labelledby="modalTitle"
