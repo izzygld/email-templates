@@ -35,7 +35,6 @@
           <nuxt-link to="/OUTorah"><li>Arnold Gerson</li></nuxt-link>
           <nuxt-link to="/OUTorah"><li>NextGen</li></nuxt-link>
           <nuxt-link to="/OUTorah"><li>Bring Israel Home</li></nuxt-link> 
-          <!-- <nuxt-link to="/men"><li>Men's</li></nuxt-link> -->
           <nuxt-link to="/new"><li>New</li></nuxt-link>
         </ul>
         <!-- <nuxt-link to="/cart">
