@@ -6,6 +6,7 @@
         <img src="https://res.cloudinary.com/ouinternal/image/upload/c_scale,f_auto,q_auto,w_50/v1512569395/email-icon_rcepty.png">
         </nuxt-link>
         <ul>
+          <nuxt-link to="/OUGeneral"><li>General</li></nuxt-link>
           <nuxt-link to="/Yachad"><li>Yachad</li></nuxt-link>
           <nuxt-link to="/NCSY"><li>NCSY</li></nuxt-link> 
           <nuxt-link to="/Kosher"><li>Kosher</li></nuxt-link>
