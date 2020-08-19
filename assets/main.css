@@ -277,6 +277,7 @@ input[type='range'].slider:focus::-ms-fill-upper {
 
 /* check out how little code this is I love you gridddddddddddd ❤️ */
 
+
 @media (max-width: 600px) {
   aside {
     width: 100% !important;
@@ -305,7 +306,14 @@ input[type='range'].slider:focus::-ms-fill-upper {
     width: 350px !important;
   }
 }
-
+@media (max-width: 480px) {
+  .content{
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  button {
+    padding: 10px 15px;
+  }
+}
 @media (min-width: 601px) and (max-width: 900px) {
   .content {
     grid-template-columns: repeat(2, 1fr) !important;

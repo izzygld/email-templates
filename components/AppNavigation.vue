@@ -36,9 +36,11 @@ export default {
 }
 
 nav {
-  width: 100vw;
-  height: 60px;
-  background: white;
+  width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+    background: white;
 }
 
 ul {
@@ -78,5 +80,16 @@ a:active {
   margin: -5px 0 0 20px;
   border-radius: 1000px;
   font-weight: 700;
+}
+@media (max-width: 480px) {
+  ul {
+      flex-flow: wrap;
+  }
+  nav{
+    height: auto;
+    width: 100%;
+  }
+  .capsule{
+  }
 }
 </style>

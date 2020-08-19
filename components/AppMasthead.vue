@@ -55,9 +55,8 @@ h1 {
     font-size: 20px;
 }
 .masthead {
-  padding: 0px 10px;
+  padding: 10px;
   width: 100%;
-  height: 100px;
   color: white;
   align-items: center;
   display: flex;
@@ -69,5 +68,17 @@ h1 {
   background-image: url('https://res.cloudinary.com/orthodox-union/image/upload/q_auto,b_black,o_80/v1596532898/OU/general-email/Screen_Shot_2020-08-04_at_12.21.01.jpg');
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 480px) {
+  .logo{
+    justify-content: center;
+    width: 100%;
+  }
+  h1{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="sidearea">
+  <div class="sidearea sidearea--new">
     <h4>Only Show New Items</h4>
     <div class="can-toggle demo-rebrand-2">
       <input id="e" type="checkbox" v-model="trigger" @change="updateNew">
@@ -270,5 +270,21 @@ h4 {
 
 .sidearea {
   padding-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  .sidearea--new{
+    display: flex;
+    align-items: center;
+  }
+  .sidearea {
+  padding-bottom: 0px;
+}
+h4{
+  font-family: 'Barlow', Helvetica, Arial, sans-serif;
+  margin: 2px 0;
+  padding-right: 10px;
+}
+
 }
 </style>

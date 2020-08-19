@@ -1,5 +1,6 @@
 module.exports = {
   target: 'static',
+  cache: true,
   // router: {
   //   base: '/ouintranet-email-templates/'
   // },
@@ -12,6 +13,11 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+    ],
+    script: [
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -27,4 +33,4 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3e64ea' }
-};
+}

@@ -1,7 +1,10 @@
 <template>
   <aside>
-    <div class="sidearea">     
-    <div class="mostused-area">     
+    <div class="sidearea">
+      <div class="filter" @click="openItem()" :class="{'filter--open' : isopen}"> filters here - <span :class="{'arrow_box--open' : isopen}"></span></div>
+     
+    <transition v-on:enter="enter" v-on:leave="leave">
+           <div v-if="isopen">
       <label for="usedamounts">Most used: <span>{{ usedamounts }}</span></label>
       <input 
         class="slider" 
@@ -15,8 +18,7 @@
       />
       <span class="min">{{ min }}</span>
       <span class="max">{{ max }}</span>
-    </div>
-      </div>
+    
     <app-switch v-if="!newtype" />
     <div class="sidearea callout">
       <h4>Special !</h4>
@@ -47,7 +49,11 @@
           <nuxt-link to="/new"><li>New</li></nuxt-link>
      </ul>
     </div>
-      
+        </div>
+    </transition>
+
+    
+    </div>
   </aside>
 </template>
 
@@ -74,6 +80,28 @@ export default {
   },
   components: {
     AppSwitch
+  },
+  methods: {
+      openItem: function(){
+        this.isopen = !  this.isopen
+    }, 
+    setClass: function(item){
+        if (item == true ) {
+          return 'open'
+        }
+        return 'close'
+    },
+enter: function(el, done){   
+        Velocity(el, 'slideDown', {duration: 400,  
+                                   easing: "easeInBack"},
+                                  {complete: done})
+    },
+    
+    leave: function(el, done){
+        Velocity(el, 'slideUp', {duration: 400,  
+                                 easing: "easeInBack"},
+                                {complete: done})
+    },    
   }
 };
 </script>
@@ -143,19 +171,5 @@ ul.sidebar-list a {
 .filter--open{
     margin-bottom: 10px;
 
-}
-
-@media (max-width: 480px) {
-  .callout,
-  .mostused-area{
-    display: none;
-  }
-  .sidearea{
-    border-bottom: none;
-    padding-bottom: 0px;
-  }
-  .sidearea:first-of-type {
-    padding-bottom: 0px;
-  }
 }
 </style>

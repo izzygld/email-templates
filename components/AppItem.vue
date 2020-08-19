@@ -128,4 +128,13 @@ a.button:hover{
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+@media (max-width: 480px) {
+  .item__bgImage{
+  width: 100px;
+      height: 100px;
+  }
+  .item{
+    padding: 10px;
+  }
+}
 </style>
