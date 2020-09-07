@@ -8,6 +8,14 @@ const createStore = () => {
       new: false,
       products: [
         {
+          name: 'Yachad Communal Engagement',
+          usage: 149.99,
+          category: 'Yachad',
+          new: true,
+          article: 'Yachad Communal Engagement',
+          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1599464524/Teamyachad/yachad-engagement4.jpg'
+        },
+        {
           name: 'OU Academy Training',
           usage: 149.99,
           category: 'OUGeneral',
