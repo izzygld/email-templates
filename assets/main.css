@@ -319,3 +319,7 @@ input[type='range'].slider:focus::-ms-fill-upper {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+a.nuxt-link-exact-active.nuxt-link-active li {
+   color: black;
+    font-weight: bold;
+}
