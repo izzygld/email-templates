@@ -8,6 +8,22 @@ const createStore = () => {
       new: false,
       products: [
         {
+          name: 'DOU Kosher Direct',
+          usage: 59.99,
+          category: 'Kosher',
+          new: false,
+          article: 'direct',
+          img: 'https://res.cloudinary.com/ncsy/image/upload/f_auto,q_auto/v1603013966/westcoast/screencapture-ouintranet-org-newsletters-kosher-newsletter-kosher-newsletter-2020-10-18-12_38_50.png'
+        },
+        {
+          name: 'Westcoast',
+          usage: 149.99,
+          category: 'NCSY',
+          new: true,
+          article: 'Westcoast',
+          img: 'https://res.cloudinary.com/ncsy/image/upload/f_auto,q_auto/v1603013801/westcoast/screencapture-ouintranet-org-newsletters-westcoast-newsletter-westcoast-new-test-2020-10-18-12_36_25.png'
+        },
+        {
           name: 'Yachad Communal Engagement',
           usage: 149.99,
           category: 'Yachad',
