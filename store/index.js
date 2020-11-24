@@ -8,6 +8,14 @@ const createStore = () => {
       new: false,
       products: [
         {
+          name: 'Teach Newsletter',
+          usage: 149.99,
+          category: 'IPA',
+          new: true,
+          article: 'Teach Newsletter 2020',
+          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1606226358/teachcoalition/email/screencapture-ouintranet-org-newsletters-ipa-newsletter-teach-newsletter-november-2020-11-24-15_55_50.png'
+        },
+        {
           name: 'DOU Kosher Direct',
           usage: 59.99,
           category: 'Kosher',
