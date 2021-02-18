@@ -64,6 +64,22 @@ const createStore = () => {
           img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596545995/OU/general-email/ou_torah_mishna_yomit.png'
         },
         {
+          name: 'Yachad Ivdu',
+          usage: 149.99,
+          category: 'Yachad',
+          new: true,
+          article: 'Yachad Ivdu 2021',
+          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1613655557/Torah/email/screencapture-ouintranet-org-newsletters-yachad-newsletter-ivdu-test-2021-02-18-15_26_26.png'
+        },
+        {
+          name: 'Yachad Communal',
+          usage: 149.99,
+          category: 'Yachad',
+          new: true,
+          article: 'Yachad Communal 2021',
+          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1613655563/Torah/email/screencapture-ouintranet-org-newsletters-yachad-newsletter-copy-2021-02-18-15_26_04.png'
+        },
+        {
           name: 'Hashoneh Halachot',
           usage: 28.99,
           category: 'OUTorah',
