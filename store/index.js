@@ -8,6 +8,14 @@ const createStore = () => {
       new: false,
       products: [
         {
+          name: 'Yachad Reach',
+          usage: 149.99,
+          category: 'Yachad',
+          new: true,
+          article: 'Yachad Reach 2021',
+          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1623650507/teachcoalition/screencapture-file-Users-izzygld-Desktop-test-copy-html-2021-06-14-08_54_27.png'
+        },
+        {
           name: 'Teach Newsletter',
           usage: 149.99,
           category: 'IPA',
