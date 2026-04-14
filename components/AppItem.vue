@@ -2,9 +2,10 @@
   <div class="item">
     <p>{{ item.name }}</p>
     <span class="new" v-if="item.new">New</span>
-      <div class="item__bgImage" :style="{ backgroundImage: 'url(' + item.img + ')' }"></div>
+<!--     <img :src="`/${item.img}`" :alt="`Image of ${item.name}`">
+ -->    <div class="item__bgImage" :style="{ backgroundImage: 'url(' + item.img + ')' }"></div>
     <!-- <p>{{ item.usage | usdollar }}</p> -->
-    <button class="add" @click="showModal">View Email</button>
+    <button class="add" @click="showModalFunc">View Email</button>
     <!-- <a :href="item.img" target="_blank" class="button">View Email New Page</a> -->
     <!-- <button class="add" @click="viewItem">View Email</button> -->
    <!--  <button class="quick-view" @click="">Quick View
@@ -18,49 +19,36 @@
   </div>
 </template>
 
-<script>
-import AppModal from './AppModal.vue';
+<script setup>
+import { ref } from 'vue'
+import { useMainStore } from '~/stores/main'
+import AppModal from './AppModal.vue'
 
-
-export default {
-  props: {
-    item: {
-      type: Object,
-      required: true
-    },
-    index: {
-      type: Number,
-      required: true
-    }
+defineProps({
+  item: {
+    type: Object,
+    required: true
   },
-  data() {
-    return {
-      isModalVisible: false
-    };
-  },  
-  filters: {
-    usdollar: function(value) {
-      return `$${value}`;
-    }
-  },
-  methods: {
-    addItem() {
-      this.$store.commit('addItem', this.item);
-    },
-    viewItem() {
-      this.showModal = true
-    },
-      showModal() {
-        this.isModalVisible = true;
-      },
-      closeModal() {
-        this.isModalVisible = false;
-      }    
-  },
-    components: {
-    AppModal
+  index: {
+    type: Number,
+    required: true
   }
-};
+})
+
+const store = useMainStore()
+const isModalVisible = ref(false)
+
+const addItem = () => {
+  store.addItem(item)
+}
+
+const showModalFunc = () => {
+  isModalVisible.value = true
+}
+
+const closeModal = () => {
+  isModalVisible.value = false
+}
 </script>
 
 <style scoped>
@@ -128,13 +116,24 @@ a.button:hover{
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-@media (max-width: 480px) {
-  .item__bgImage{
-  width: 100px;
-      height: 100px;
-  }
-  .item{
-    padding: 10px;
-  }
+.add {
+  padding: 10px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 1000px;
+  cursor: pointer;
+  background: #fff;
+  color: #3e64ea;
+  border: 1px solid #3e64ea;
+  text-decoration: none;
+  font-family: Barlow, sans-serif;
+  text-transform: uppercase;
+  margin: 10px;
+  transition: all 0.15s ease-out;
+}
+.add:hover {
+  background: #3e64ea;
+  color: #fff;
+  transition: all 0.2s ease-in;
 }
 </style>

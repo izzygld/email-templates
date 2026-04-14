@@ -1,8 +1,8 @@
 
 <template>
   <transition name="modal-fade">
-    <div class="modal-backdrop" @click="$emit('close')">
-    <div class="modal-innner" @click.stop>
+    <div class="modal-backdrop">
+    <div class="modal-innner">
       <div class="modal"
         role="dialog"
         aria-labelledby="modalTitle"
@@ -51,23 +51,22 @@
     </div>
   </transition>
 </template>
-<script>
-  export default {
-    name: 'modal',
-    props: {
-    image: {
-      type: String
-    },
-    name: {
-      type: String
-    }
-  },    
-    methods: {
-      close() {
-        this.$emit('close');
-      },
-    },
-  };
+
+<script setup>
+defineProps({
+  image: {
+    type: String
+  },
+  name: {
+    type: String
+  }
+})
+
+const emit = defineEmits(['close'])
+
+const close = () => {
+  emit('close')
+}
 </script>
 
 <style>

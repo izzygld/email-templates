@@ -2,30 +2,30 @@
   <div>
     <nav>
       <div class="capsule">
-        <nuxt-link exact to="/">
-        <img src="https://res.cloudinary.com/ouinternal/image/upload/c_scale,f_auto,q_auto,w_50/v1512569395/email-icon_rcepty.png">
-        </nuxt-link>
+        <NuxtLink to="/">
+          <img src="https://res.cloudinary.com/ouinternal/image/upload/c_scale,f_auto,q_auto,w_50/v1512569395/email-icon_rcepty.png">
+        </NuxtLink>
         <ul>
-          <nuxt-link to="/OUGeneral"><li>General</li></nuxt-link>
-          <nuxt-link to="/Yachad"><li>Yachad</li></nuxt-link>
-          <nuxt-link to="/NCSY"><li>NCSY</li></nuxt-link> 
-          <nuxt-link to="/Kosher"><li>Kosher</li></nuxt-link>
-          <nuxt-link to="/new"><li>New</li></nuxt-link>
-          <nuxt-link to="/all"><li>All</li></nuxt-link>
+          <NuxtLink to="/Yachad"><li>Yachad</li></NuxtLink>
+          <NuxtLink to="/NCSY"><li>NCSY</li></NuxtLink> 
+          <NuxtLink to="/Kosher"><li>Kosher</li></NuxtLink>
+          <NuxtLink to="/new"><li>New</li></NuxtLink>
+          <NuxtLink to="/all"><li>All</li></NuxtLink>
         </ul>
       </div>
     </nav>
   </div>
 </template>
 
-<script>
-export default {
-  computed: {
-    cartTotal() {
-      return this.$store.state.cartTotal;
-    }
-  }
-};
+<script setup>
+import { computed } from 'vue'
+import { useMainStore } from '~/stores/main'
+
+const store = useMainStore()
+
+const cartTotal = computed(() => {
+  return store.cartTotal
+})
 </script>
 
 <style scoped>
@@ -36,11 +36,9 @@ export default {
 }
 
 nav {
-  width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 10px;
-    background: white;
+  width: 100vw;
+  height: 60px;
+  background: white;
 }
 
 ul {
@@ -80,16 +78,5 @@ a:active {
   margin: -5px 0 0 20px;
   border-radius: 1000px;
   font-weight: 700;
-}
-@media (max-width: 480px) {
-  ul {
-      flex-flow: wrap;
-  }
-  nav{
-    height: auto;
-    width: 100%;
-  }
-  .capsule{
-  }
 }
 </style>
