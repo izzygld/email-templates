@@ -3,7 +3,7 @@
     <p>{{ item.name }}</p>
     <span class="new" v-if="item.new">New</span>
 <!--     <img :src="`/${item.img}`" :alt="`Image of ${item.name}`">
- -->    <div class="item__bgImage" :style="{ backgroundImage: 'url(' + item.img + ')' }"></div>
+ -->    <div class="item__bgImage" :style="{ backgroundImage: 'url(' + item.img + ')' }" @click="showModalFunc"></div>
     <!-- <p>{{ item.usage | usdollar }}</p> -->
     <button class="add" @click="showModalFunc">View Email</button>
     <!-- <a :href="item.img" target="_blank" class="button">View Email New Page</a> -->
