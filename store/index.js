@@ -8,52 +8,12 @@ const createStore = () => {
       new: false,
       products: [
         {
-          name: 'Yachad Reach',
-          usage: 149.99,
-          category: 'Yachad',
-          new: true,
-          article: 'Yachad Reach 2021',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1623650507/teachcoalition/screencapture-file-Users-izzygld-Desktop-test-copy-html-2021-06-14-08_54_27.png'
-        },
-        {
-          name: 'Teach Newsletter',
-          usage: 149.99,
-          category: 'IPA',
-          new: true,
-          article: 'Teach Newsletter 2020',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1606226358/teachcoalition/email/screencapture-ouintranet-org-newsletters-ipa-newsletter-teach-newsletter-november-2020-11-24-15_55_50.png'
-        },
-        {
-          name: 'DOU Kosher Direct',
-          usage: 59.99,
-          category: 'Kosher',
-          new: false,
-          article: 'direct',
-          img: 'https://res.cloudinary.com/ncsy/image/upload/f_auto,q_auto/v1603013966/westcoast/screencapture-ouintranet-org-newsletters-kosher-newsletter-kosher-newsletter-2020-10-18-12_38_50.png'
-        },
-        {
-          name: 'Westcoast',
-          usage: 149.99,
-          category: 'NCSY',
-          new: true,
-          article: 'Westcoast',
-          img: 'https://res.cloudinary.com/ncsy/image/upload/f_auto,q_auto/v1603013801/westcoast/screencapture-ouintranet-org-newsletters-westcoast-newsletter-westcoast-new-test-2020-10-18-12_36_25.png'
-        },
-        {
-          name: 'Yachad Communal Engagement',
-          usage: 149.99,
-          category: 'Yachad',
-          new: true,
-          article: 'Yachad Communal Engagement',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1599464524/Teamyachad/yachad-engagement4.jpg'
-        },
-        {
           name: 'OU Academy Training',
           usage: 149.99,
           category: 'OUGeneral',
           new: true,
           article: 'OU Academy',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546022/OU/general-email/ou-newsletter-academy-training-july-2020-2020-07-28-14_15_46.png'
+          img: 'ou-newsletter-academy-training-july-2020-2020-07-28-14_15_46.png'
         },
         {
           name: 'OU Today V2',
@@ -61,7 +21,7 @@ const createStore = () => {
           category: 'OUGeneral',
           new: true,
           article: 'OU Today',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546078/OU/general-email/outoday-v2-2020-07-28-14_15_21.png'
+          img: 'outoday-v2-2020-07-28-14_15_21.png'
         },
         {
           name: 'Mishna Yomit',
@@ -69,23 +29,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: false,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596545995/OU/general-email/ou_torah_mishna_yomit.png'
-        },
-        {
-          name: 'Yachad Ivdu',
-          usage: 149.99,
-          category: 'Yachad',
-          new: true,
-          article: 'Yachad Ivdu 2021',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1613655557/Torah/email/screencapture-ouintranet-org-newsletters-yachad-newsletter-ivdu-test-2021-02-18-15_26_26.png'
-        },
-        {
-          name: 'Yachad Communal',
-          usage: 149.99,
-          category: 'Yachad',
-          new: true,
-          article: 'Yachad Communal 2021',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1613655563/Torah/email/screencapture-ouintranet-org-newsletters-yachad-newsletter-copy-2021-02-18-15_26_04.png'
+          img: 'ou_torah_mishna_yomit.png'
         },
         {
           name: 'Hashoneh Halachot',
@@ -93,7 +37,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: false,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596545994/OU/general-email/hashoneh-halachot.png'
+          img: 'hashoneh-halachot.png'
         },
         {
           name: 'HaShoneh Halachos 2: Mishneh Torah',
@@ -101,7 +45,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: false,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546037/OU/general-email/hashoneh-halachot2.png'
+          img: 'mishna-halachat-2.png'
         },
         {
           name: 'Torah Weekly',
@@ -109,7 +53,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: true,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546049/OU/general-email/torah-weekly.png'
+          img: 'torah-weekly.png'
         },
         {
           name: 'Shnayim Mikrah',
@@ -117,7 +61,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: true,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546041/OU/general-email/shnayim-mikrah.png'
+          img: 'shnayim-mikrah.png'
         },
         {
           name: 'Sefirah',
@@ -125,7 +69,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: false,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546042/OU/general-email/sefirah.png'
+          img: 'sefirah.png'
         },
         {
           name: 'One By One',
@@ -133,7 +77,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: false,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546024/OU/general-email/one-by-one.png'
+          img: 'one-by-one.png'
         },
         {
           name: 'Torah Weekly',
@@ -141,7 +85,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: false,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546049/OU/general-email/torah_weekly.png'
+          img: 'torah_weekly.png'
         },
         {
           name: 'Taryag',
@@ -149,7 +93,7 @@ const createStore = () => {
           category: 'OUTorah',
           new: false,
           article: 'OU Torah',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546070/OU/general-email/taryag.png'
+          img: 'taryag.png'
         },
         {
           name: 'Shabbat Shalom',
@@ -157,7 +101,7 @@ const createStore = () => {
           category: 'shabbatshalom',
           new: false,
           article: 'Shabbat Shalom',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546025/OU/general-email/shabbatshalom.png'
+          img: 'shabbatshalom.png'
         },
         {
           name: 'Shabbat Shalom 2020',
@@ -165,7 +109,7 @@ const createStore = () => {
           category: 'shabbatshalom',
           new: true,
           article: 'Shabbat Shalom',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546067/OU/general-email/shabbatshalomv2.png'
+          img: 'shabbatshalomv2.png'
         },
         {
           name: 'OU Press new',
@@ -173,7 +117,7 @@ const createStore = () => {
           category: 'OuPress',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546032/OU/general-email/oupress-new.png'
+          img: 'oupress-new.png'
         },
         {
           name: 'OU Press Sale',
@@ -181,7 +125,7 @@ const createStore = () => {
           category: 'OuPress',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546035/OU/general-email/oupress-sale.png'
+          img: 'oupress-sale.png'
         },
         {
           name: 'OU Press News',
@@ -189,7 +133,7 @@ const createStore = () => {
           category: 'OuPress',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546002/OU/general-email/ou-press-news.png'
+          img: 'ou-press-news.png'
         },
         {
           name: 'OU Press Blank',
@@ -197,7 +141,7 @@ const createStore = () => {
           category: 'OuPress',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546060/OU/general-email/ou-press-blank.png'
+          img: 'ou-press-blank.png'
         },
         {
           name: 'Job News',
@@ -205,7 +149,7 @@ const createStore = () => {
           category: 'OuJob',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546029/OU/general-email/ou-jobs-news.png'
+          img: 'ou-jobs-news.png'
         },
         {
           name: 'Job Events',
@@ -213,7 +157,7 @@ const createStore = () => {
           category: 'OuJob',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546014/OU/general-email/ou-jobs-events.png'
+          img: 'ou-jobs-events.png'
         },
         {
           name: 'Community Events',
@@ -221,7 +165,7 @@ const createStore = () => {
           category: 'Community',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546056/OU/general-email/community-events.png'
+          img: 'community-events.png'
         },
         {
           name: 'Speakers Bureau',
@@ -229,7 +173,7 @@ const createStore = () => {
           category: 'Community',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596545999/OU/general-email/community_newsletter-ous-speakers-bureau.png'
+          img: 'community_newsletter-ous-speakers-bureau.png'
         },
         {
           name: 'Community Fair',
@@ -237,7 +181,7 @@ const createStore = () => {
           category: 'Community',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546055/OU/general-email/community-fair.png'
+          img: 'community-fair.png'
         },
         {
           name: 'Community Letter',
@@ -245,7 +189,7 @@ const createStore = () => {
           category: 'Community',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596545993/OU/general-email/community-letter.png'
+          img: 'community-letter.png'
         },
         {
           name: 'Community Tefillah Tips',
@@ -253,7 +197,7 @@ const createStore = () => {
           category: 'Community',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546004/OU/general-email/community-tefillah-tips.png'
+          img: 'community-tefillah-tips.png'
         },
         {
           name: 'Synagogue & Community Services Activities',
@@ -261,7 +205,7 @@ const createStore = () => {
           category: 'Community',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546064/OU/general-email/synagogue-community-services-activities.png'
+          img: 'synagogue-community-services-activities.png'
         },
         {
           name: 'Youth Professionals Letter',
@@ -269,7 +213,7 @@ const createStore = () => {
           category: 'Community',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546012/OU/general-email/youth-professionals-letter.png'
+          img: 'youth-professionals-letter.png'
         },
         {
           name: 'Yachad Advisor',
@@ -277,7 +221,7 @@ const createStore = () => {
           category: 'Yachad',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546007/OU/general-email/advisor.png'
+          img: 'advisor.png'
         },
         {
           name: 'Yachad Advisor Updated',
@@ -285,7 +229,7 @@ const createStore = () => {
           category: 'Yachad',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546046/OU/general-email/yachad-advisor.png'
+          img: 'yachad-advisor.png'
         },
         {
           name: 'JUF Newsletter',
@@ -293,7 +237,7 @@ const createStore = () => {
           category: 'Yachad',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546031/OU/general-email/juf-newsletter.png'
+          img: 'juf-newsletter.png'
         },
         {
           name: 'Our Way',
@@ -301,7 +245,7 @@ const createStore = () => {
           category: 'Yachad',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546066/OU/general-email/our-way.png'
+          img: 'our-way.png'
         },
         {
           name: 'Shabbat Shalom',
@@ -309,7 +253,7 @@ const createStore = () => {
           category: 'Yachad',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546012/OU/general-email/shabbat-shalom.png'
+          img: 'shabbat-shalom.png'
         },
         {
           name: 'Team Yachad',
@@ -317,7 +261,7 @@ const createStore = () => {
           category: 'Yachad',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546035/OU/general-email/team-yachad.png'
+          img: 'team-yachad.png'
         },
         {
           name: 'Weekly newsletter',
@@ -325,7 +269,7 @@ const createStore = () => {
           category: 'Yachad',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546056/OU/general-email/weekly-newsletter.png'
+          img: 'weekly-newsletter.png'
         },
         {
           name: 'Yachad Gifts',
@@ -333,7 +277,7 @@ const createStore = () => {
           category: 'Yachad',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546013/OU/general-email/yachad-gifts.png'
+          img: 'yachad-gifts.png'
         },
         {
           name: 'Yachad L’Olam',
@@ -341,7 +285,7 @@ const createStore = () => {
           category: 'Yachad',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546007/OU/general-email/yachad-lolam.png'
+          img: 'yachad-lolam.png'
         },
         {
           name: 'Yachad Monthly Calendar',
@@ -349,7 +293,7 @@ const createStore = () => {
           category: 'Yachad',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546051/OU/general-email/yachad-monthly-calendar.png'
+          img: 'yachad-monthly-calendar.png'
         },
         {
           name: 'Yachad Template',
@@ -357,7 +301,7 @@ const createStore = () => {
           category: 'Yachad',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546039/OU/general-email/yachad-template.png'
+          img: 'yachad-template.png'
         },
 
         {
@@ -366,7 +310,7 @@ const createStore = () => {
           category: 'NCSY',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546010/OU/general-email/ftdo.png'
+          img: 'ftdo.png'
         },
         {
           name: 'Leadership Development Roundup',
@@ -374,7 +318,7 @@ const createStore = () => {
           category: 'NCSY',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546076/OU/general-email/regional-roundup.png'
+          img: 'regional-roundup.png'
         },
         {
           name: 'NCSY Header, text and video',
@@ -382,7 +326,7 @@ const createStore = () => {
           category: 'NCSY',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546016/OU/general-email/ncsy-header.png'
+          img: 'ncsy-header.png'
         },
         {
           name: 'NCSY Summer',
@@ -390,7 +334,7 @@ const createStore = () => {
           category: 'NCSY',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546039/OU/general-email/ncsy-summer.png'
+          img: 'ncsy-summer.png'
         },
         {
           name: 'Daily Halacha',
@@ -398,7 +342,7 @@ const createStore = () => {
           category: 'Kosher',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596545994/OU/general-email/daily-halacha.png'
+          img: 'daily-halacha.png'
         },
         {
           name: 'Kosher Alerts',
@@ -406,7 +350,7 @@ const createStore = () => {
           category: 'Kosher',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546033/OU/general-email/kosher-alerts.png'
+          img: 'kosher-alerts.png'
         },
         {
           name: 'Alumni Weekly',
@@ -414,7 +358,7 @@ const createStore = () => {
           category: 'Alumni',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546043/OU/general-email/alumni-weekly.png'
+          img: 'alumni-weekly.png'
         },
         {
           name: 'Full header image',
@@ -422,7 +366,7 @@ const createStore = () => {
           category: 'IPA',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546043/OU/general-email/fullheader-image.png'
+          img: 'fullheader-image.png'
         },
         {
           name: 'TeachNYS Newsletter',
@@ -430,7 +374,7 @@ const createStore = () => {
           category: 'IPA',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596545999/OU/general-email/Teachnys-newsletter.png'
+          img: 'Teachnys-newsletter.png'
         },
         {
           name: 'OUAdvocacy Newsletter',
@@ -438,7 +382,7 @@ const createStore = () => {
           category: 'IPA',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546080/OU/general-email/Teachnys-partner.png'
+          img: 'Teachnys-partner.png'
         },
         {
           name: 'Jewish Action',
@@ -446,7 +390,7 @@ const createStore = () => {
           category: 'JewishAction',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546067/OU/general-email/ja.png'
+          img: 'ja.png'
         },
         {
           name: 'Jewish Action 2020',
@@ -454,7 +398,7 @@ const createStore = () => {
           category: 'JewishAction',
           new: true,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546106/OU/general-email/jewishaction2020.png'
+          img: 'jewishaction2020.png'
         },
         {
           name: 'Israel Free Spirit',
@@ -462,7 +406,7 @@ const createStore = () => {
           category: 'ifs',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546057/OU/general-email/ifs.png'
+          img: 'ifs.png'
         },
         {
           name: 'Staff Education Newsletter',
@@ -470,7 +414,7 @@ const createStore = () => {
           category: 'StaffEducation',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546022/OU/general-email/staff-education.png'
+          img: 'staff-education.png'
         },
         {
           name: 'Board Alerts',
@@ -478,7 +422,7 @@ const createStore = () => {
           category: 'BoardAlerts',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546011/OU/general-email/board-alerts.png'
+          img: 'board-alerts.png'
         },
         {
           name: 'Board Weekly',
@@ -486,7 +430,7 @@ const createStore = () => {
           category: 'BoardAlerts',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546068/OU/general-email/board-weekly.png'
+          img: 'board-weekly.png'
         },
         {
           name: 'OU Insider',
@@ -494,7 +438,7 @@ const createStore = () => {
           category: 'BoardAlerts',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546065/OU/general-email/ou-insider.png'
+          img: 'ou-insider.png'
         },
         {
           name: 'Synagogue & Community Services',
@@ -502,7 +446,7 @@ const createStore = () => {
           category: 'BoardAlerts',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546063/OU/general-email/SynagoguesCommunityservice.png'
+          img: 'SynagoguesCommunityservice.png'
         },
         {
           name: 'OU Israel – Layla',
@@ -510,7 +454,7 @@ const createStore = () => {
           category: 'OUIsrael',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546084/OU/general-email/ou-israel-layla.png'
+          img: 'ou-israel-layla.png'
         },
         {
           name: 'OU Israel – General',
@@ -518,42 +462,42 @@ const createStore = () => {
           category: 'OUIsrael',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546084/OU/general-email/OUisrael-geeneral.png'
+          img: 'OUisrael-geeneral.png'
         }, {
           name: 'Rabbi Weinrebs',
           usage: 59.99,
           category: 'RabbiWienrebs',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546019/OU/general-email/rabbi-wienberbs.png'
+          img: 'rabbi-wienberbs.png'
         }, {
           name: 'Barych Dayan Haemet',
           usage: 59.99,
           category: 'OUGeneral',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546052/OU/general-email/baruch-dayan-emet.png'
+          img: 'baruch-dayan-emet.png'
         }, {
           name: 'OU Employee News',
           usage: 59.99,
           category: 'OUGeneral',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546045/OU/general-email/ou-employee-news.png'
+          img: 'ou-employee-news.png'
         }, {
           name: 'Open Positions',
           usage: 59.99,
           category: 'OUGeneral',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546044/OU/general-email/open-positions.png'
+          img: 'open-positions.png'
         }, {
           name: 'Team Yachad Calendar',
           usage: 59.99,
           category: 'TeamYachad',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546038/OU/general-email/team-yachad-calendar.png'
+          img: 'team-yachad-calendar.png'
         },
 
         {
@@ -562,7 +506,7 @@ const createStore = () => {
           category: 'ArnoldGerson',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546008/OU/general-email/arnold-gerson.png'
+          img: 'arnold-gerson.png'
         },
         {
           name: 'NextGen',
@@ -570,7 +514,7 @@ const createStore = () => {
           category: 'NextGen',
           new: false,
           article: 'jacket',
-          img: 'https://res.cloudinary.com/orthodox-union/image/upload/f_auto,q_auto/v1596546077/OU/general-email/nextgen.png'
+          img: 'nextgen.png'
         }
       ]
     },
